@@ -41,6 +41,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -137,6 +138,7 @@ footer {
     color: white;
 }
 
+
 /* peseudo classes */
 
 .main-nav li a:hover {
@@ -164,6 +166,7 @@ section.join form input:valid {
     color: #F63232;
 }
 
+
 /* peseudo elements */
 
 section.join p::first-letter {
@@ -183,59 +186,47 @@ p::after {
     .welcome h2 {
         font-size: 30px;
     }
-
     .main-nav li {
         font-size: 18px;
     }
-
 }
 
 @media screen and (max-width: 960px) {
     .welcome h2 {
         font-size: 20px;
     }
-
     .main-nav li {
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 700px) {
-
     .banner .welcome {
         position: static;
         padding: 10px;
         text-align: center;
     }
-
     .welcome h2 {
         font-size: 20px;
     }
-
-
     .welcome h2 span {
         font-size: 1em;
     }
-
     .welcome h2 br {
         display: none;
     }
-
     .images li {
         display: block;
         width: 100%;
         margin: 20px auto;
     }
-
     .main-nav {
         position: static;
         top: 0;
     }
-
     .main-nav ul {
         padding: 0;
     }
-
     .main-nav li {
         display: block;
         width: 100%;
@@ -243,11 +234,7 @@ p::after {
         text-align: center;
         margin: 10px 0;
     }
-
     header {
-        padding: 10px;
         position: static;
     }
-
-
 }
