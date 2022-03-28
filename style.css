@@ -1,0 +1,253 @@
+body,
+ul,
+li,
+h1,
+h2,
+a {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    position: relative;
+    z-index: 0;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .welcome {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    color: white;
+    background-color: #FEB614;
+    padding: 30px;
+}
+
+.welcome h2 {
+    font-size: 47px;
+}
+
+.welcome span {
+    font-size: 1.3em;
+}
+
+header {
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header h1 {
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.main-nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 105px;
+}
+
+.main-nav ul {
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.main-nav li {
+    display: inline-block;
+    width: 25%;
+    font-size: 24px;
+}
+
+li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a.join {}
+
+main {
+    width: 1200px;
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #F63232;
+    font-size: 48px;
+}
+
+article p {
+    line-height: 1.5em;
+    color: #4b4b4b;
+}
+
+.images {
+    text-align: center;
+    list-style: none;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img {
+    width: 100%;
+}
+
+section.join {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+section.join h2 {
+    font-size: 36px;
+}
+
+section.join form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 4px solid white;
+    text-align: center;
+}
+
+footer {
+    background-color: #F63232;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* peseudo classes */
+
+.main-nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li:hover {
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    /* transform: scale(1.5) */
+}
+
+section.join form input:focus {
+    border: 3px solid #4b4b4b;
+    /* outline: none; */
+}
+
+section.join form input:valid {
+    border: 3px solid #2fb90d;
+    outline: none;
+}
+
+.main-nav ul li:first-child a {
+    color: #F63232;
+}
+
+/* peseudo elements */
+
+section.join p::first-letter {
+    font-size: 1.2em;
+}
+
+p::selection {
+    background-color: #F63232;
+    color: white;
+}
+
+p::after {
+    content: '...';
+}
+
+@media screen and (max-width: 1400px) {
+    .welcome h2 {
+        font-size: 30px;
+    }
+
+    .main-nav li {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .welcome h2 {
+        font-size: 20px;
+    }
+
+    .main-nav li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .banner .welcome {
+        position: static;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .welcome h2 {
+        font-size: 20px;
+    }
+
+
+    .welcome h2 span {
+        font-size: 1em;
+    }
+
+    .welcome h2 br {
+        display: none;
+    }
+
+    .images li {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .main-nav {
+        position: static;
+        top: 0;
+    }
+
+    .main-nav ul {
+        padding: 0;
+    }
+
+    .main-nav li {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px;
+        position: static;
+    }
+
+
+}
