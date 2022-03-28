@@ -215,6 +215,9 @@ p::after {
     .welcome h2 br {
         display: none;
     }
+    .images {
+        padding: 0;
+    }
     .images li {
         display: block;
         width: 100%;
